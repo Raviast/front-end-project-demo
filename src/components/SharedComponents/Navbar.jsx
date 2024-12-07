@@ -66,8 +66,8 @@ function Navbar() {
           <div className="flex space-x-4">
             {location.pathname.startsWith('/admin') ? (
               <>
-                <Link to="/admin" className="hover:text-gray-300">
-                  Dashboard
+                <Link to="/" className="hover:text-gray-300">
+                  Home
                 </Link>
                 <Link to="/admin/projects" className="hover:text-gray-300">
                   Projects
@@ -92,6 +92,9 @@ function Navbar() {
                 </Link>
                 <Link to="/contact" className="hover:underline">
                   Contact
+                </Link>
+                <Link to="/admin" className="hover:underline">
+                  Admin Pannel
                 </Link>
               </>
             )}
