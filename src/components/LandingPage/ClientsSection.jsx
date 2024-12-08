@@ -48,7 +48,7 @@ function HappyClients() {
     // Fetch projects data
     const fetchClients = async () => {
       try {
-        const response = await fetch("https://react-backend-demo.vercel.app//client/allClient");
+        const response = await fetch("https://react-backend-demo.vercel.app/client/allClient");
         const data = await response.json();
         console.log("::::::::::",data);
         
