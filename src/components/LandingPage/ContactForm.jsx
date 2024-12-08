@@ -34,7 +34,7 @@ function ContactForm() {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="fullName"
+          name="name"
           placeholder="Full Name"
           value={formData.fullName}
           onChange={handleChange}

@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react'
 const ProjectsSection = () => {
 
   const [projects, setProjects] = useState([]);
-  const [clients, setClients] = useState([]);
+  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch projects and clients data from the backend
+  // Fetch projects data from the backend
   useEffect(() => {
     // Fetch projects data
     const fetchProjects = async () => {
