@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from '../../services/api';
 
 const ProjectManagement = () => {
   const [projectData, setProjectData] = useState({

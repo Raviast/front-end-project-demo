@@ -15,21 +15,39 @@ const ClientManagement = () => {
   };
 
   const handleImageUpload = (e) => {
-    setClientData({ ...clientData, image: e.target.files[0] });
+    setClientData({ ...clientData, image: "https://th.bing.com/th/id/OIP.t1kKfJMi8BB1w60acyuk9wHaLH?w=127&h=191&c=7&r=0&o=5&pid=1.7" });
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append('name', clientData.name);
-    formData.append('designation', clientData.designation);
-    formData.append('description', clientData.description);
-    formData.append('image', clientData.image);
 
-    axios.post('/clients', formData).then(() => {
-      alert('Client added successfully!');
-      setClientData({ name: '', designation: '', description: '', image: null });
-    });
+    e.preventDefault();
+    clientData.image = "https://th.bing.com/th/id/OIP.t1kKfJMi8BB1w60acyuk9wHaLH?w=127&h=191&c=7&r=0&o=5&pid=1.7";
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+   
+    const raw = JSON.stringify(clientData);
+
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow"
+    };
+
+    fetch("https://react-backend-demo.vercel.app/client/addClient", requestOptions)
+      .then((response) => response.text())
+      .then((result) => {
+        alert('Client added successfully!');
+        setClientData({ name: '',
+          designation: '',
+          description: '',
+          image: null,});
+      })
+      .catch((error) => {
+        console.error(error)
+        alert('Something went wrong while adding client, please try again');
+      });
   };
 
   return (
