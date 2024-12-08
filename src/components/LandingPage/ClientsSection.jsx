@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import ClientCard from '../SharedComponents/ClientCard'; // Import the ClientCard component
 
 function HappyClients() {
