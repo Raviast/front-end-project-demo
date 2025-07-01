@@ -10,7 +10,7 @@ const ContactDetails = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch("https://react-backend-demo.vercel.app/subscription/all-sub");
+        const response = await fetch("https://react-backend-demo.vercel.app/contact/allContact");
         const data = await response.json();
 
         setContacts(data);
@@ -23,11 +23,19 @@ const ContactDetails = () => {
     fetchContacts();
   }, []);
 
-  useEffect(() => {
-    axios.get('/contacts').then((response) => {
-      setContacts(response.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get('/contacts').then((response) => {
+  //     setContacts(response.data);
+  //   });
+  // }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <div className="p-8 bg-white">
