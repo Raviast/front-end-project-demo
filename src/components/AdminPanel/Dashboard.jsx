@@ -33,7 +33,7 @@ const Dashboard = () => {
   
 
   return (
-    <div className="p-8 bg-gray-100">
+    <div className="p-8 bg-gray-100 flex flex-col min-h-screen">
       <h2 className="text-2xl font-bold mb-4">Newsletter Subscribers</h2>
       <ul className="list-disc pl-5">
         {subscribers.map((subscriber) => (
