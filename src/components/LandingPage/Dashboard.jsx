@@ -12,7 +12,6 @@ const Dashboard = () => {
            <ClientsSection/>
            <AboutUs/>
            <ContactForm/>
-           <Footer/>
         </>
     )
 }
