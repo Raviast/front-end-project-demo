@@ -7,7 +7,7 @@ function HappyClients() {
   const [error, setError] = useState(null);
   // Fetch clients data from the backend
   useEffect(() => {
-    // Fetch projects data
+    // Fetch clients data
     const fetchClients = async () => {
       try {
         const response = await fetch("https://react-backend-demo.vercel.app/client/allClient");
