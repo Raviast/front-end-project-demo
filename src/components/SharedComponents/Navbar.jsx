@@ -75,6 +75,9 @@ function Navbar() {
                 <Link to="/admin/clients" className="hover:text-gray-300">
                   Clients
                 </Link>
+                <Link to="/admin/contacts" className="hover:text-gray-300">
+                  Contacts
+                </Link>
               </>
             ) : (
               <>
