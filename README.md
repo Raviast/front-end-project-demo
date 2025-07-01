@@ -1,11 +1,6 @@
 # Project- Real Demo
 
-<<<<<<< HEAD
 A full-stack application consisting of a landing page and an admin panel. The application should include various features for managing project and client information, viewing contact form details, and tracking newsletter subscriptions.
-
-
-=======
-# Project- Real Demo
 
 ## Please consider Frontend git repository Link:
 ```
@@ -23,8 +18,6 @@ https://front-end-project-demo.vercel.app/
 
 A full-stack application consisting of a landing page and an admin panel. The application should include various features for managing project and client information, viewing contact form details, and tracking newsletter subscriptions.
 
-
->>>>>>> 2270ed3c9857892390dc201868a5792545fc1d79
 # Project Management Platform
 
 ## Table of Contents
@@ -207,9 +200,3 @@ Fetch all contact form details
 - Subscribe: GET /subscription/all-sub - Fetch details of Subscribe to newsletter
 
 
-
-        
-<<<<<<< HEAD
-=======
-# Project-Real-demo
->>>>>>> 2270ed3c9857892390dc201868a5792545fc1d79
